@@ -1,0 +1,118 @@
+html {
+  font-size: 24px;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(110, 184, 181);
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: min(90%, 600px);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px black;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  font-weight: bold;
+  border: 1px solid rgb(22, 121, 116);
+  flex-basis: 50%;
+  flex-grow: 1;
+  width: min(90%, 100px);
+  padding: 0.25rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+form button {
+  text-wrap: nowrap;
+  color: white;
+  background-color: rgb(110, 184, 181);
+  cursor: pointer;
+  padding: 0.1rem 1rem;
+  border: none;
+  box-shadow: 3px 3px black;
+  transition: all 0.3s;
+  height: 100%;
+
+  &:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px black;
+  }
+  &:active {
+    background-color: rgb(22, 121, 116);
+  }
+}
+
+.to-do-list {
+  list-style: none;
+  padding: 0;
+}
+
+.to-do-list li {
+  background-color: #ffffff;
+  box-shadow: 3px 3px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid black;
+  border: 1px solid;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+li button {
+  color: white;
+  background-color: rgb(215, 72, 72);
+  cursor: pointer;
+  padding: 0.1rem 1rem;
+  border: none;
+  box-shadow: 3px 3px black;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px black;
+  }
+
+  &:active {
+    background-color: rgb(121, 22, 22);
+  }
+}
+
+button {
+    font-size: 0.75rem;
+}
