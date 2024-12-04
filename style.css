@@ -89,6 +89,12 @@ form button {
   border: 1px solid;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  transition: all 0.3s;
+}
+
+.to-do-list li:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px;
 }
 
 li button {
