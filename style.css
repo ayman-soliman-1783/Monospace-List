@@ -93,8 +93,8 @@ form button {
 }
 
 .to-do-list li:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: 6px 6px;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px;
 }
 
 li button {
@@ -107,8 +107,8 @@ li button {
   transition: all 0.3s;
 
   &:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 4px 4px black;
+    transform: translate(-1.5px, -1.5px);
+    box-shadow: 4.5px 4.5px black;
   }
 }
 
