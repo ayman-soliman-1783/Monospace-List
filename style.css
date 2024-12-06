@@ -113,10 +113,15 @@ li button {
 }
 
 button {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 
-    &:active {
-        transform: translate(3px, 3px) !important;
-        box-shadow: 0px 0px !important;
-    }
+  &:active {
+    transform: translate(3px, 3px) !important;
+    box-shadow: 0px 0px !important;
+  }
+}
+
+form > button {
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
 }
